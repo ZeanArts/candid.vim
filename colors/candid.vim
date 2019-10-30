@@ -37,18 +37,18 @@ endfun
 
 " colors definition {{{
 
-let s:tickle_me_pink = {'gui': '#fb7da7', 'cterm256': '168'}
-let s:blue_bell = {'gui': '#a18bd3', 'cterm256': '180'}
-let s:mustard = {'gui': '#ffce5b', 'cterm256': '222'}
-let s:sea_serpent = {'gui': '#50C6D8', 'cterm256': '180'}
+let s:tickle_me_pink = {'gui': '#ff7570', 'cterm256': '168'}
+let s:sea_serpent = {'gui': '#85d6ff', 'cterm256': '180'}
+let s:mustard = {'gui': '#ffd454', 'cterm256': '222'}
+let s:blue_bell = {'gui': '#c19eff', 'cterm256': '180'}
 let s:eucalyptus = {'gui': '#2cda9d', 'cterm256': '79'}
-let s:isabelline = {'gui': '#efeeea', 'cterm256': '254'}
-let s:raisin_black = {'gui': '#2f343f', 'cterm256': '232'}
+let s:isabelline = {'gui': '#fafafa', 'cterm256': '254'}
 let s:mummys_tomb = {'gui': '#818e8e', 'cterm256': '240'}
+let s:viridian = { 'gui': '#969696', 'cterm256': '224' }
+let s:raisin_black = {'gui': '#2f343f', 'cterm256': '232'}
+let s:pale_black = { 'gui': '#1c1c1c', 'cterm256': '234' }
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 let s:visual_black = { 'gui': 'NONE', 'cterm256': 'NONE'}
-let s:viridian = { 'gui': '#4C8273', 'cterm256': '224' }
-let s:pale_black = { 'gui': '#1c1c1c', 'cterm256': '234' }
 "}}}
 
 "--------------------
@@ -70,7 +70,7 @@ call <sid>hi('FoldColumn', s:mummys_tomb, s:raisin_black, 'none', {})
 call <sid>hi('SignColumn', s:none, s:raisin_black, 'none', {})
 call <sid>hi('VertSplit', s:mummys_tomb, s:mummys_tomb, 'none', {})
 call <sid>hi('LineNr', s:mummys_tomb, s:raisin_black, 'none', {})
-call <sid>hi('CursorLineNr', s:mustard, s:raisin_black, 'none', {})
+call <sid>hi('CursorLineNr', s:isabelline, s:raisin_black, 'none', {})
 
 call <sid>hi('DiffAdd', s:eucalyptus, s:none, 'none', {})
 call <sid>hi('DiffChange', s:mustard, s:none, 'none', {})
@@ -136,7 +136,7 @@ hi link Boolean Constant
 hi link Float Number
 
 call <sid>hi('Identifier', s:blue_bell, s:none, 'none', {})
-call <sid>hi('Function', s:blue_bell, s:none, 'none', {})
+call <sid>hi('Function', s:sea_serpent, s:none, 'none', {})
 
 call <sid>hi('Statement', s:tickle_me_pink, s:none, 'none', {})
 hi link Conditional Statement
@@ -145,7 +145,7 @@ call <sid>hi('PreProc', s:sea_serpent, s:none, 'none', {})
 
 call <sid>hi('Type', s:sea_serpent, s:none, 'none', {})
 
-call <sid>hi('Special', s:eucalyptus, s:none, 'none', {})
+call <sid>hi('Special', s:blue_bell, s:none, 'none', {})
 
 call <sid>hi('Underlined', s:none, s:none, 'underline', {})
 
