@@ -41,7 +41,7 @@ let s:tickle_me_pink = {'gui': '#ff7570', 'cterm256': '168'}
 let s:sea_serpent = {'gui': '#85d6ff', 'cterm256': '180'}
 let s:mustard = {'gui': '#ffd454', 'cterm256': '222'}
 let s:blue_bell = {'gui': '#c19eff', 'cterm256': '180'}
-let s:eucalyptus = {'gui': '#2cda9d', 'cterm256': '79'}
+let s:eucalyptus = {'gui': '#9ee349', 'cterm256': '79'}
 let s:isabelline = {'gui': '#fafafa', 'cterm256': '254'}
 let s:mummys_tomb = {'gui': '#818e8e', 'cterm256': '240'}
 let s:viridian = { 'gui': '#969696', 'cterm256': '224' }
@@ -136,7 +136,7 @@ hi link Boolean Constant
 hi link Float Number
 
 call <sid>hi('Identifier', s:blue_bell, s:none, 'none', {})
-call <sid>hi('Function', s:sea_serpent, s:none, 'none', {})
+call <sid>hi('Function', s:eucalyptus, s:none, 'none', {})
 
 call <sid>hi('Statement', s:tickle_me_pink, s:none, 'none', {})
 hi link Conditional Statement
