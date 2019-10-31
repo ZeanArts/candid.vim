@@ -45,8 +45,8 @@ let s:eucalyptus = {'gui': '#9ee349', 'cterm256': '79'}
 let s:isabelline = {'gui': '#fafafa', 'cterm256': '254'}
 let s:mummys_tomb = {'gui': '#818e8e', 'cterm256': '240'}
 let s:viridian = { 'gui': '#969696', 'cterm256': '224' }
+let s:pale_black = { 'gui': '#3f4554', 'cterm256': '234' }
 let s:raisin_black = {'gui': '#2f343f', 'cterm256': '232'}
-let s:pale_black = { 'gui': '#1c1c1c', 'cterm256': '234' }
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 let s:visual_black = { 'gui': 'NONE', 'cterm256': 'NONE'}
 "}}}
@@ -61,8 +61,8 @@ call <sid>hi('Normal', s:isabelline, s:raisin_black, 'none', {})
 call <sid>hi('Cursor', s:none, s:none, 'inverse', {})
 hi link lCursor Cursor
 hi link CursorIM Cursor
-call <sid>hi('CursorLine', s:raisin_black, s:mummys_tomb, 'none', {})
-call <sid>hi('EndOfBuffer', s:mustard, s:none, 'none', {})
+call <sid>hi('CursorLine', s:isabelline, s:pale_black, 'none', {})
+call <sid>hi('EndOfBuffer', s:mummys_tomb, s:none, 'none', {})
 call <sid>hi('Conceal', s:sea_serpent, s:none, 'none', {})
 call <sid>hi('CursorColumn', s:none, s:sea_serpent, 'none', {})
 call <sid>hi('ColorColumn', s:none, s:mummys_tomb, 'none', {})
