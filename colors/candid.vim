@@ -50,7 +50,7 @@ let s:visual_black = { 'gui': 'NONE', 'cterm256': 'NONE'}
 call <sid>hi('Normal', s:almost_white, s:raisin_black, 'none', {})
 
 " UI {{{
-call <sid>hi('Cursor', s:greyish, s:pale_black, 'none', {})
+call <sid>hi('Cursor', s:none, s:none, 'inverse', {})
 hi link lCursor Cursor
 hi link CursorIM Cursor
 call <sid>hi('CursorLine', s:none, s:pale_black, 'none', {})
